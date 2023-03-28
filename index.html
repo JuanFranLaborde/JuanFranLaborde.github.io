@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL Bar</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="primary-header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">LET's DRINK</a>
+            <ul class="nav-list">
+                <li>
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Drinks</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">About us</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <a href="#" class="button">Register/Sign in</a>
+        </nav>
+    </header>
+
+    <section class="hero"></section>
+    <section class="demo-content"></section>
+
+    <script>
+        const isScrolling = () => {
+            const headerEl = document.querySelector('.primary-header')
+            let windowPosition = window.scrollY > 800
+            headerEl.classList.toggle('active', windowPosition)
+        }
+        window.addEventListener('scroll', isScrolling)
+    </script>
+
+    <script src="./main.js"></script>
+    
+</body>
+</html>
